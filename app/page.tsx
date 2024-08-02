@@ -1,7 +1,11 @@
-export default function Home() {
+import { Container } from '@/components';
+
+export default async function Home() {
   return (
-    <main className="flex items-center justify-center h-screen">
-      <h1 className="text-3xl">hello from boilerplate!</h1>
+    <main>
+      <Container className="grid grid-cols-2 gap-1 py-5 md:grid-cols-3 lg:grid-cols-4">
+        hello from app container
+      </Container>
     </main>
   );
 }
